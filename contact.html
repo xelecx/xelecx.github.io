@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SUPERCARS GALLERY</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS (lien vers votre fichier externe) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="fw-bold text-uppercase">SUPERCARS GALLERY</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">A propos de nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contacte</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section Contact -->
+<section class="bg-dark text-white py-5">
+    <div class="container py-5 text-center">
+        <h1 class="display-2 fw-bold text-uppercase mb-3">Contactez-nous</h1>
+        <p class="lead text-white-50">Notre équipe est à votre disposition pour toute question</p>
+    </div>
+</section>
+
+<!-- Section Contact principale -->
+<section class="py-5 bg-dark">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Informations de contact -->
+            <div class="col-lg-4">
+                <h2 class="display-6 fw-bold text-white mb-4">FeedBack</h2>
+                <p class="text-white-50 mb-5">N'hésitez pas à nous contacter pour toute information sur nos supercars, pour planifier une visite ou pour tout autre renseignement.</p>
+                
+                <!-- Carte contact 1 -->
+                <div class="bg-black text-white p-4 rounded-4 mb-4">
+                    <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                    <h4>Adresse</h4>
+                    <p class="text-white-50 mb-0">France, Paris</p>
+                    <p class="text-white-50">Centre-ville, Avenue des Champs-Élysées, 75008</p>
+                </div>
+                
+                <!-- Carte contact 2 -->
+                <div class="bg-black text-white p-4 rounded-4 mb-4">
+                    <i class="fas fa-phone-alt fa-3x text-primary mb-3"></i>
+                    <h4>Téléphone</h4>
+                    <p class="text-white-50 mb-0">+33 6 66 28 00 79</p>
+                    <p class="text-white-50">Lun-Ven: 9h - 19h</p>
+                </div>
+                
+                <!-- Carte contact 3 -->
+                <div class="bg-black text-white p-4 rounded-4 mb-4">
+                    <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                    <h4>Email</h4>
+                    <p class="text-white-50 mb-0">floringabriel.popa@outlook.fr</p>
+                    <p class="text-white-50">contact@supercars-gallery.com</p>
+                </div>
+                
+                <!-- Réseaux sociaux -->
+                <div class="mt-5">
+                    <h5 class="text-white mb-3">Suivez-nous</h5>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formulaire de contact -->
+            <div class="col-lg-8">
+                <div class="bg-black text-white rounded-4 p-4 p-lg-5">
+                    <h3 class="mb-4">Envoyez-nous un message</h3>
+                    
+                    <form>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div>
+                                    <label for="name" class="text-white mb-2">Votre nom</label>
+                                    <input type="text" class="form-control bg-dark text-white border-0" id="name" placeholder="Votre nom complet">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <label for="email" class="text-white mb-2">Votre mail</label>
+                                    <input type="email" class="form-control bg-dark text-white border-0" id="email" placeholder="votre@email.com">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <label for="subject" class="text-white mb-2">Sujet</label>
+                                    <input type="text" class="form-control bg-dark text-white border-0" id="subject" placeholder="Sujet de votre message">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div>
+                                    <label for="message" class="text-white mb-2">Votre message</label>
+                                    <textarea class="form-control bg-dark text-white border-0" id="message" rows="6" placeholder="Votre message..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg px-5 py-3 w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Envoyez
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Carte - Paris -->
+<section class="py-5 bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-dark rounded-4 overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.874102092142!2d2.335455315674153!3d48.8606110792879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1647889012345!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section FAQ rapide -->
+<section class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center display-5 fw-bold text-white mb-5">Questions fréquentes</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="bg-black text-white rounded-4 p-4 h-100">
+                    <h5><i class="fas fa-question-circle text-primary me-2"></i> Puis-je visiter la galerie ?</h5>
+                    <p class="text-white-50 mb-0">Oui, notre galerie est ouverte du lundi au samedi de 9h à 19h. Les visites privées sont disponibles sur rendez-vous.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-black text-white rounded-4 p-4 h-100">
+                    <h5><i class="fas fa-question-circle text-primary me-2"></i> Proposez-vous des essais ?</h5>
+                    <p class="text-white-50 mb-0">Les essais sont réservés aux acheteurs potentiels après vérification de votre éligibilité. Contactez-nous pour plus d'informations.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-black text-white rounded-4 p-4 h-100">
+                    <h5><i class="fas fa-question-circle text-primary me-2"></i> Quels sont les délais de réponse ?</h5>
+                    <p class="text-white-50 mb-0">Nous nous efforçons de répondre à toutes les demandes sous 24-48 heures ouvrées.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-black text-white rounded-4 p-4 h-100">
+                    <h5><i class="fas fa-question-circle text-primary me-2"></i> Acceptez-vous les paiements en crypto ?</h5>
+                    <p class="text-white-50 mb-0">Oui, nous acceptons les principales cryptomonnaies pour l'achat de véhicules. Contactez-nous pour plus de détails.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">SUPERCARS GALLERY</h5>
+                <p class="text-white-50">L'excellence automobile au service de votre passion. Découvrez les plus belles supercars du monde.</p>
+                <div class="mt-3">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h5 class="fw-bold mb-3">Navigation</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                    <li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Galerie</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">A propos de nous</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contacte</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="fw-bold mb-3">Contact</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>France, Paris</li>
+                    <li class="mb-2"><i class="fas fa-phone me-2"></i>+33 6 66 28 00 79</li>
+                    <li class="mb-2"><i class="fas fa-envelope me-2"></i>floringabriel.popa@outlook.fr</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="fw-bold mb-3">Bulletin</h5>
+                <p class="text-white-50">Restez informé des dernières arrivées</p>
+                <div class="input-group">
+                    <input type="email" class="form-control bg-dark text-white border-0" placeholder="Votre email">
+                    <button class="btn btn-primary" type="button">S'abonner</button>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 bg-secondary">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0 text-white-50">&copy; 2024 SUPERCARS GALLERY. Tous droits réservés.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="text-white text-decoration-none me-3">Mentions légales</a>
+                <a href="#" class="text-white text-decoration-none">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
