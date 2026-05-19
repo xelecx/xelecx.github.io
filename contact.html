@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SUPERCARS GALLERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top scrolled" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="brand-logo">SUPERCARS</span><span class="brand-accent">GALLERY</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                <li class="nav-item ms-2"><a class="nav-cta active-cta" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header page-header-short">
+    <div class="page-header-bg" style="background-image: url('images/ferrari-sf90-stradale.jpg')"></div>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+        <div class="page-breadcrumb" data-aos="fade-right">
+            <a href="index.html">Accueil</a>
+            <span>/</span>
+            <span>Contact</span>
+        </div>
+        <h1 class="page-header-title" data-aos="fade-up" data-aos-delay="100">
+            PARLONS<br>SUPERCARS
+        </h1>
+        <p class="page-header-sub" data-aos="fade-up" data-aos-delay="200">Notre équipe vous répond sous 24h</p>
+    </div>
+</section>
+
+<!-- Contact principal -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- Infos -->
+            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="800">
+                <span class="section-label">Nous joindre</span>
+                <h2 class="contact-title">RESTONS<br>EN CONTACT</h2>
+                <p class="text-muted-custom mb-5">N'hésitez pas à nous contacter pour toute information sur nos supercars, pour planifier une visite ou pour tout autre renseignement.</p>
+
+                <div class="contact-info-item">
+                    <div class="cinfo-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <strong>Adresse</strong>
+                        <p>Avenue des Champs-Élysées, 75008<br>Paris, France</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="cinfo-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <strong>Téléphone</strong>
+                        <p>+33 6 66 28 00 79<br><span class="text-muted-sm">Lun–Ven : 9h – 19h</span></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="cinfo-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>contact@supercars-gallery.com<br><span class="text-muted-sm">Réponse sous 24h ouvrées</span></p>
+                    </div>
+                </div>
+
+                <div class="contact-social-label">Suivez-nous</div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Formulaire -->
+            <div class="col-lg-8" data-aos="fade-left" data-aos-duration="800">
+                <div class="contact-form-wrap">
+                    <div class="contact-form-header">
+                        <h3>Envoyez-nous un message</h3>
+                        <p>Tous les champs sont optionnels sauf l'email</p>
+                    </div>
+
+                    <div id="successMsg" class="contact-success" style="display:none">
+                        <i class="fas fa-check-circle"></i>
+                        Message envoyé ! Nous vous répondrons sous 24h.
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-field">
+                                    <label>Votre nom</label>
+                                    <input type="text" class="form-control" placeholder="Jean Dupont">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-field">
+                                    <label>Votre email <span class="required">*</span></label>
+                                    <input type="email" class="form-control" placeholder="jean@exemple.com" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-field">
+                                    <label>Sujet</label>
+                                    <div class="subject-pills">
+                                        <button type="button" class="pill active" data-val="Renseignement général">Renseignement général</button>
+                                        <button type="button" class="pill" data-val="Achat">Achat</button>
+                                        <button type="button" class="pill" data-val="Visite privée">Visite privée</button>
+                                        <button type="button" class="pill" data-val="Autre">Autre</button>
+                                    </div>
+                                    <input type="hidden" id="subjectInput" value="Renseignement général">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-field">
+                                    <label>Votre message</label>
+                                    <textarea class="form-control" rows="5" placeholder="Décrivez votre demande..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="contact-submit">
+                                    <span>Envoyer le message</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Carte Google Maps -->
+<section class="map-section">
+    <div class="container">
+        <div class="map-wrap" data-aos="fade-up">
+            <div class="map-label">
+                <i class="fas fa-map-marker-alt"></i>
+                Champs-Élysées, Paris
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.874102092142!2d2.335455315674153!3d48.8606110792879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1647889012345!5m2!1sfr!2sfr"
+                width="100%" height="420" style="border:0; filter: grayscale(100%) invert(90%) contrast(90%);"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="row align-items-end mb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <span class="section-label">Questions fréquentes</span>
+                <h2 class="section-title">FAQ</h2>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <i class="fas fa-chevron-right"></i>
+                        Puis-je visiter la galerie ?
+                    </div>
+                    <p>Oui, notre galerie est ouverte du lundi au samedi de 9h à 19h. Les visites privées sont disponibles sur rendez-vous.</p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="80">
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <i class="fas fa-chevron-right"></i>
+                        Proposez-vous des essais ?
+                    </div>
+                    <p>Les essais sont réservés aux acheteurs potentiels après vérification. Contactez-nous pour en savoir plus.</p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="160">
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <i class="fas fa-chevron-right"></i>
+                        Quels sont les délais de réponse ?
+                    </div>
+                    <p>Nous nous efforçons de répondre à toutes les demandes sous 24 à 48 heures ouvrées.</p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="240">
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <i class="fas fa-chevron-right"></i>
+                        Acceptez-vous les paiements en crypto ?
+                    </div>
+                    <p>Oui, nous acceptons les principales cryptomonnaies pour l'achat de véhicules. Contactez-nous pour les détails.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="container">
+        <div class="row g-5 py-5">
+            <div class="col-md-4">
+                <div class="footer-brand">SUPERCARS<span>GALLERY</span></div>
+                <p class="footer-desc">L'excellence automobile au service de votre passion.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h6 class="footer-heading">Navigation</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Contact</h6>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt me-2 text-accent"></i>Paris, France</li>
+                    <li><i class="fas fa-phone me-2 text-accent"></i>+33 6 66 28 00 79</li>
+                    <li><i class="fas fa-envelope me-2 text-accent"></i>contact@supercars-gallery.com</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Newsletter</h6>
+                <p class="footer-desc">Restez informé des dernières arrivées</p>
+                <div class="footer-newsletter">
+                    <input type="email" placeholder="votre@email.com">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2024 SUPERCARS GALLERY. Tous droits réservés.</span>
+            <div>
+                <a href="#">Mentions légales</a>
+                <a href="#">Confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, offset: 60 });
+
+    // Cursor
+    const dot = document.querySelector('.cursor-dot');
+    const outline = document.querySelector('.cursor-outline');
+    let mouseX = 0, mouseY = 0, outX = 0, outY = 0;
+    window.addEventListener('mousemove', e => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        dot.style.left = mouseX + 'px'; dot.style.top = mouseY + 'px';
+    });
+    function animCursor() {
+        outX += (mouseX - outX) * 0.12; outY += (mouseY - outY) * 0.12;
+        outline.style.left = outX + 'px'; outline.style.top = outY + 'px';
+        requestAnimationFrame(animCursor);
+    }
+    animCursor();
+    document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => outline.classList.add('hovered'));
+        el.addEventListener('mouseleave', () => outline.classList.remove('hovered'));
+    });
+
+    // Subject pills
+    document.querySelectorAll('.pill').forEach(pill => {
+        pill.addEventListener('click', function() {
+            document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+            this.classList.add('active');
+            document.getElementById('subjectInput').value = this.dataset.val;
+        });
+    });
+
+    // Form submit
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('.contact-submit');
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi...';
+        setTimeout(() => {
+            document.getElementById('successMsg').style.display = 'flex';
+            btn.innerHTML = '<span>Envoyer le message</span><i class="fas fa-arrow-right"></i>';
+            this.reset();
+            document.querySelectorAll('.pill').forEach((p, i) => p.classList.toggle('active', i === 0));
+        }, 1200);
+    });
+</script>
+</body>
+</html>

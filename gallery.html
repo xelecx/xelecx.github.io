@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - SUPERCARS GALLERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top scrolled" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="brand-logo">SUPERCARS</span><span class="brand-accent">GALLERY</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link active" href="gallery.html">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                <li class="nav-item ms-2"><a class="nav-cta" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url('images/lamborghini-aventador-svj.jpg')"></div>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+        <div class="page-breadcrumb" data-aos="fade-right">
+            <a href="index.html">Accueil</a>
+            <span>/</span>
+            <span>Galerie</span>
+        </div>
+        <h1 class="page-header-title" data-aos="fade-up" data-aos-delay="100">
+            LA<br>COLLECTION
+        </h1>
+        <p class="page-header-sub" data-aos="fade-up" data-aos-delay="200">6 machines d'exception · 4 marques légendaires</p>
+    </div>
+    <div class="page-header-scroll">
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- Galerie -->
+<section class="py-5 bg-dark gallery-page-section">
+    <div class="container py-4">
+
+        <!-- Filtres -->
+        <div class="gallery-filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">Tout <span class="filter-count">6</span></button>
+            <button class="filter-btn" data-filter="ferrari">Ferrari <span class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="lamborghini">Lamborghini <span class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="porsche">Porsche <span class="filter-count">1</span></button>
+            <button class="filter-btn" data-filter="mclaren">McLaren <span class="filter-count">1</span></button>
+        </div>
+
+        <!-- Grille -->
+        <div class="row g-3 mt-4" id="gallery-grid">
+
+            <!-- McLaren 720S -->
+            <div class="col-md-6 col-lg-4 gallery-item mclaren" data-aos="fade-up" data-aos-duration="700">
+                <div class="gcard">
+                    <div class="gcard-img">
+                        <img src="images/mclaren-720s.jpg" alt="McLaren 720S">
+                        <div class="gcard-overlay">
+                            <a href="#" class="gcard-zoom"><i class="fas fa-expand"></i></a>
+                        </div>
+                        <div class="gcard-brand-tag">McLaren</div>
+                    </div>
+                    <div class="gcard-body">
+                        <div class="gcard-header">
+                            <h4>720S</h4>
+                            <span class="gcard-price">$299,000</span>
+                        </div>
+                        <p class="gcard-desc">La 720S représente une révolution dans la conception des supercars grâce à son esthétique futuriste.</p>
+                        <div class="gcard-specs">
+                            <div class="gspec">
+                                <i class="fas fa-horse-head"></i>
+                                <strong>710</strong>
+                                <span>CV</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-gauge-high"></i>
+                                <strong>2.8s</strong>
+                                <span>0-100</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <strong>212</strong>
+                                <span>mph</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferrari 488 Pista -->
+            <div class="col-md-6 col-lg-4 gallery-item ferrari" data-aos="fade-up" data-aos-duration="700" data-aos-delay="80">
+                <div class="gcard">
+                    <div class="gcard-img">
+                        <img src="images/ferrari-488-pista.jpg" alt="Ferrari 488 Pista">
+                        <div class="gcard-overlay">
+                            <a href="#" class="gcard-zoom"><i class="fas fa-expand"></i></a>
+                        </div>
+                        <div class="gcard-brand-tag">Ferrari</div>
+                    </div>
+                    <div class="gcard-body">
+                        <div class="gcard-header">
+                            <h4>488 Pista</h4>
+                            <span class="gcard-price">$350,000</span>
+                        </div>
+                        <p class="gcard-desc">La 488 Pista est une version axée sur la piste dotée d'une aérodynamique améliorée.</p>
+                        <div class="gcard-specs">
+                            <div class="gspec">
+                                <i class="fas fa-horse-head"></i>
+                                <strong>711</strong>
+                                <span>CV</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-gauge-high"></i>
+                                <strong>2.85s</strong>
+                                <span>0-100</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <strong>211</strong>
+                                <span>mph</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lamborghini Huracan EVO -->
+            <div class="col-md-6 col-lg-4 gallery-item lamborghini" data-aos="fade-up" data-aos-duration="700" data-aos-delay="160">
+                <div class="gcard">
+                    <div class="gcard-img">
+                        <img src="images/lamborghini-huracan-evo.jpg" alt="Lamborghini Huracan EVO">
+                        <div class="gcard-overlay">
+                            <a href="#" class="gcard-zoom"><i class="fas fa-expand"></i></a>
+                        </div>
+                        <div class="gcard-brand-tag">Lamborghini</div>
+                    </div>
+                    <div class="gcard-body">
+                        <div class="gcard-header">
+                            <h4>Huracan EVO</h4>
+                            <span class="gcard-price">$261,274</span>
+                        </div>
+                        <p class="gcard-desc">L'évolution de la Lamborghini à moteur V10 la plus performante jamais construite.</p>
+                        <div class="gcard-specs">
+                            <div class="gspec">
+                                <i class="fas fa-horse-head"></i>
+                                <strong>631</strong>
+                                <span>CV</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-gauge-high"></i>
+                                <strong>2.9s</strong>
+                                <span>0-100</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <strong>202</strong>
+                                <span>mph</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferrari SF90 Stradale -->
+            <div class="col-md-6 col-lg-4 gallery-item ferrari" data-aos="fade-up" data-aos-duration="700">
+                <div class="gcard">
+                    <div class="gcard-img">
+                        <img src="images/ferrari-sf90-stradale.jpg" alt="Ferrari SF90 Stradale">
+                        <div class="gcard-overlay">
+                            <a href="#" class="gcard-zoom"><i class="fas fa-expand"></i></a>
+                        </div>
+                        <div class="gcard-brand-tag">Ferrari</div>
+                        <div class="gcard-badge">Hybride</div>
+                    </div>
+                    <div class="gcard-body">
+                        <div class="gcard-header">
+                            <h4>SF90 Stradale</h4>
+                            <span class="gcard-price">$625,000</span>
+                        </div>
+                        <p class="gcard-desc">Le premier véhicule hybride rechargeable de série de Ferrari — une révolution.</p>
+                        <div class="gcard-specs">
+                            <div class="gspec">
+                                <i class="fas fa-horse-head"></i>
+                                <strong>986</strong>
+                                <span>CV</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-gauge-high"></i>
+                                <strong>2.5s</strong>
+                                <span>0-100</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <strong>211</strong>
+                                <span>mph</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lamborghini Aventador SVJ -->
+            <div class="col-md-6 col-lg-4 gallery-item lamborghini" data-aos="fade-up" data-aos-duration="700" data-aos-delay="80">
+                <div class="gcard">
+                    <div class="gcard-img">
+                        <img src="images/lamborghini-aventador-svj.jpg" alt="Lamborghini Aventador SVJ">
+                        <div class="gcard-overlay">
+                            <a href="#" class="gcard-zoom"><i class="fas fa-expand"></i></a>
+                        </div>
+                        <div class="gcard-brand-tag">Lamborghini</div>
+                        <div class="gcard-badge">V12</div>
+                    </div>
+                    <div class="gcard-body">
+                        <div class="gcard-header">
+                            <h4>Aventador SVJ</h4>
+                            <span class="gcard-price">$517,000</span>
+                        </div>
+                        <p class="gcard-desc">Le summum des voitures de série Lamborghini à moteur V12 atmosphérique.</p>
+                        <div class="gcard-specs">
+                            <div class="gspec">
+                                <i class="fas fa-horse-head"></i>
+                                <strong>759</strong>
+                                <span>CV</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-gauge-high"></i>
+                                <strong>2.8s</strong>
+                                <span>0-100</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <strong>217</strong>
+                                <span>mph</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Porsche 911 Turbo S -->
+            <div class="col-md-6 col-lg-4 gallery-item porsche" data-aos="fade-up" data-aos-duration="700" data-aos-delay="160">
+                <div class="gcard">
+                    <div class="gcard-img">
+                        <img src="images/porsche-911-turbo-s.jpg" alt="Porsche 911 Turbo S">
+                        <div class="gcard-overlay">
+                            <a href="#" class="gcard-zoom"><i class="fas fa-expand"></i></a>
+                        </div>
+                        <div class="gcard-brand-tag">Porsche</div>
+                    </div>
+                    <div class="gcard-body">
+                        <div class="gcard-header">
+                            <h4>911 Turbo S</h4>
+                            <span class="gcard-price">$216,000</span>
+                        </div>
+                        <p class="gcard-desc">Utilisation quotidienne et performances extrêmes réunies dans une icône intemporelle.</p>
+                        <div class="gcard-specs">
+                            <div class="gspec">
+                                <i class="fas fa-horse-head"></i>
+                                <strong>640</strong>
+                                <span>CV</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-gauge-high"></i>
+                                <strong>2.6s</strong>
+                                <span>0-100</span>
+                            </div>
+                            <div class="gspec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <strong>205</strong>
+                                <span>mph</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="container">
+        <div class="row g-5 py-5">
+            <div class="col-md-4">
+                <div class="footer-brand">SUPERCARS<span>GALLERY</span></div>
+                <p class="footer-desc">L'excellence automobile au service de votre passion.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h6 class="footer-heading">Navigation</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Contact</h6>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt me-2 text-accent"></i>Paris, France</li>
+                    <li><i class="fas fa-phone me-2 text-accent"></i>+33 6 66 28 00 79</li>
+                    <li><i class="fas fa-envelope me-2 text-accent"></i>contact@supercars-gallery.com</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Newsletter</h6>
+                <p class="footer-desc">Restez informé des dernières arrivées</p>
+                <div class="footer-newsletter">
+                    <input type="email" placeholder="votre@email.com">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2024 SUPERCARS GALLERY. Tous droits réservés.</span>
+            <div>
+                <a href="#">Mentions légales</a>
+                <a href="#">Confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, offset: 40 });
+
+    // Cursor
+    const dot = document.querySelector('.cursor-dot');
+    const outline = document.querySelector('.cursor-outline');
+    let mouseX = 0, mouseY = 0, outX = 0, outY = 0;
+    window.addEventListener('mousemove', e => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        dot.style.left = mouseX + 'px'; dot.style.top = mouseY + 'px';
+    });
+    function animCursor() {
+        outX += (mouseX - outX) * 0.12; outY += (mouseY - outY) * 0.12;
+        outline.style.left = outX + 'px'; outline.style.top = outY + 'px';
+        requestAnimationFrame(animCursor);
+    }
+    animCursor();
+    document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => outline.classList.add('hovered'));
+        el.addEventListener('mouseleave', () => outline.classList.remove('hovered'));
+    });
+
+    // Filters
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const f = this.dataset.filter;
+            items.forEach(item => {
+                const show = f === 'all' || item.classList.contains(f);
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.display = show ? 'block' : 'none';
+                    if (show) {
+                        requestAnimationFrame(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        });
+                    }
+                }, 150);
+            });
+        });
+    });
+
+    items.forEach(item => {
+        item.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    });
+</script>
+</body>
+</html>

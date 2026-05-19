@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERCARS GALLERY - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Cursor custom -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="brand-logo">SUPERCARS</span><span class="brand-accent">GALLERY</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-1">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">À propos</a>
+                </li>
+                <li class="nav-item ms-2">
+                    <a class="nav-cta" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-bg" style="background-image: url('images/hero-gtr.jpg')"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+
+    <!-- Éléments décoratifs -->
+    <div class="hero-side-text">PERFORMANCE · EXCLUSIVITÉ · PASSION</div>
+    <div class="hero-speed-lines">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container hero-content">
+        <div class="hero-tag" data-aos="fade-right" data-aos-duration="800">
+            <span class="tag-dot"></span> Nouvelle Collection 2024
+        </div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            AU-DELÀ<br>DE LA<br><em>VITESSE.</em>
+        </h1>
+        <div class="hero-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div class="hero-divider"></div>
+            <p>L'excellence automobile à son paroxysme</p>
+        </div>
+        <div class="hero-actions" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+            <a href="gallery.html" class="btn-hero-primary">
+                <span>Explorer la collection</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="about.html" class="btn-hero-ghost">Notre histoire</a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+            <div class="hstat">
+                <strong>50+</strong>
+                <span>Supercars</span>
+            </div>
+            <div class="hstat-divider"></div>
+            <div class="hstat">
+                <strong>15</strong>
+                <span>Marques</span>
+            </div>
+            <div class="hstat-divider"></div>
+            <div class="hstat">
+                <strong>1000+</strong>
+                <span>CV en moyenne</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- Section intro marques -->
+<section class="brands-strip">
+    <div class="container">
+        <div class="brands-track">
+            <span>Ferrari</span>
+            <span class="dot">·</span>
+            <span>Lamborghini</span>
+            <span class="dot">·</span>
+            <span>McLaren</span>
+            <span class="dot">·</span>
+            <span>Porsche</span>
+            <span class="dot">·</span>
+            <span>Bugatti</span>
+            <span class="dot">·</span>
+            <span>Aston Martin</span>
+            <span class="dot">·</span>
+            <span>Pagani</span>
+            <span class="dot">·</span>
+            <span>Koenigsegg</span>
+        </div>
+    </div>
+</section>
+
+<!-- Section Cartes Premium -->
+<section class="py-5 featured-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-label">Sélection</span>
+            <h2 class="section-title">VEDETTES<br>DU MOMENT</h2>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <!-- Carte GT3RS -->
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="featured-card">
+                    <div class="featured-img-wrap">
+                        <img src="images/gt3rs.jpg" alt="Porsche GT3RS">
+                        <div class="featured-overlay"></div>
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-brand">Porsche</div>
+                        <h3>GT3 RS</h3>
+                        <p class="featured-tagline">AU-DELÀ DE LA VITESSE.</p>
+                        <div class="featured-specs">
+                            <span><i class="fas fa-horse-head"></i> 525 CV</span>
+                            <span><i class="fas fa-gauge-high"></i> 3.4s 0-100</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 296 km/h</span>
+                        </div>
+                        <a href="gallery.html" class="featured-btn">Voir les détails <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte Ferrari -->
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                <div class="featured-card">
+                    <div class="featured-img-wrap">
+                        <img src="images/ferrari.jpg" alt="Ferrari">
+                        <div class="featured-overlay"></div>
+                    </div>
+                    <div class="featured-info">
+                        <div class="featured-brand">Ferrari</div>
+                        <h3>SF90 Stradale</h3>
+                        <p class="featured-tagline">AU-DELÀ DU LUXE.</p>
+                        <div class="featured-specs">
+                            <span><i class="fas fa-horse-head"></i> 986 CV</span>
+                            <span><i class="fas fa-gauge-high"></i> 2.5s 0-100</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 340 km/h</span>
+                        </div>
+                        <a href="gallery.html" class="featured-btn">Voir les détails <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section CTA -->
+<section class="cta-section" data-aos="fade-up">
+    <div class="cta-bg-text">GALLERY</div>
+    <div class="container text-center">
+        <h2 class="cta-title">PRÊT À VIVRE<br><em>L'EXPÉRIENCE ?</em></h2>
+        <p class="cta-sub">Explorez notre collection complète de 50+ supercars d'exception</p>
+        <a href="gallery.html" class="btn-hero-primary">
+            <span>Voir toute la galerie</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="container">
+        <div class="row g-5 py-5">
+            <div class="col-md-4">
+                <div class="footer-brand">SUPERCARS<span>GALLERY</span></div>
+                <p class="footer-desc">L'excellence automobile au service de votre passion. Découvrez les plus belles supercars du monde.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h6 class="footer-heading">Navigation</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Contact</h6>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt me-2 text-accent"></i>Paris, France</li>
+                    <li><i class="fas fa-phone me-2 text-accent"></i>+33 6 66 28 00 79</li>
+                    <li><i class="fas fa-envelope me-2 text-accent"></i>contact@supercars-gallery.com</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="footer-heading">Newsletter</h6>
+                <p class="footer-desc">Restez informé des dernières arrivées</p>
+                <div class="footer-newsletter">
+                    <input type="email" placeholder="votre@email.com">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2024 SUPERCARS GALLERY. Tous droits réservés.</span>
+            <div>
+                <a href="#">Mentions légales</a>
+                <a href="#">Confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, offset: 60 });
+
+    // Navbar scroll effect
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Custom cursor
+    const dot = document.querySelector('.cursor-dot');
+    const outline = document.querySelector('.cursor-outline');
+    let mouseX = 0, mouseY = 0, outX = 0, outY = 0;
+
+    window.addEventListener('mousemove', e => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        dot.style.left = mouseX + 'px';
+        dot.style.top = mouseY + 'px';
+    });
+
+    function animCursor() {
+        outX += (mouseX - outX) * 0.12;
+        outY += (mouseY - outY) * 0.12;
+        outline.style.left = outX + 'px';
+        outline.style.top = outY + 'px';
+        requestAnimationFrame(animCursor);
+    }
+    animCursor();
+
+    document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => outline.classList.add('hovered'));
+        el.addEventListener('mouseleave', () => outline.classList.remove('hovered'));
+    });
+
+    // Counter animation
+    function animateCount(el, target, duration = 1500) {
+        let start = 0;
+        const step = target / (duration / 16);
+        const timer = setInterval(() => {
+            start += step;
+            if (start >= target) { el.textContent = target + (el.dataset.suffix || ''); clearInterval(timer); }
+            else el.textContent = Math.floor(start) + (el.dataset.suffix || '');
+        }, 16);
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.querySelectorAll('[data-count]').forEach(el => {
+                    animateCount(el, parseInt(el.dataset.count));
+                });
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.hero-stats').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
